@@ -1,0 +1,17 @@
+{
+"companyName": "Wchttzcn",
+"productName": "CUBETHON",
+"productVersion": "1.0",
+"dataUrl": "Web.data.unityweb",
+"asmCodeUrl": "Web.asm.code.unityweb",
+"asmMemoryUrl": "Web.asm.memory.unityweb",
+"asmFrameworkUrl": "Web.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#808080",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.8f1"
+}
