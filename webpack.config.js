@@ -10,8 +10,7 @@ module.exports = {
     entry: "./src/js/index.js",
     output: {
         path: finalPath,
-        filename: "app.js",
-        publicPath: "."
+        filename: "app.js"
     },
     resolve: {
         alias: {
@@ -19,9 +18,6 @@ module.exports = {
             js: path.resolve(__dirname, "src/js"),
             font: path.resolve(__dirname, "src/fonts")
         }
-    },
-    devServer: {
-        contentBase: "./dist"
     },
     module: {
         rules: [
@@ -83,9 +79,8 @@ module.exports = {
             filename: "app.css"
         }),
         new BrowserSyncPlugin({
-            host: "localhost",
-            port: 3000,
-            proxy: "https://focusthen.github.io:8080",
+            host: "http://focusthen.github.io",
+            port: process.env.PORT || 8080 || 3000,
             server: { baseDir: "." }
         })
     ]
