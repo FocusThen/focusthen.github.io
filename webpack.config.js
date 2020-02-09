@@ -11,7 +11,7 @@ module.exports = {
     output: {
         path: finalPath,
         filename: "app.js",
-        publicPath: "/"
+        publicPath: "."
     },
     resolve: {
         alias: {
@@ -83,8 +83,9 @@ module.exports = {
             filename: "app.css"
         }),
         new BrowserSyncPlugin({
-            host: "http://focusthen.github.io",
-            port: process.env.PORT || 3000,
+            host: "localhost",
+            port: 3000,
+            proxy: "https://focusthen.github.io:8080",
             server: { baseDir: "." }
         })
     ]
